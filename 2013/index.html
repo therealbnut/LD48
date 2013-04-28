@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Farm Villager Quest</title>
+<link rel="stylesheet" href="images.css" />
+<link rel="stylesheet" href="style.css" />
+
+<script type="text/javascript" src="farm.js"></script>
+<script type="text/javascript" src="market.js"></script>
+<script type="text/javascript" src="plains.js"></script>
+<script type="text/javascript" src="states.js"></script>
+
+<script type="text/javascript" src="items.js"></script>
+<script type="text/javascript" src="map.js"></script>
+<script type="text/javascript" src="player.js"></script>
+<script type="text/javascript" src="monsters.js"></script>
+<script type="text/javascript" src="logic.js"></script>
+</head>
+<body onload="javascript:begin();">
+	<div class="container">
+	<table id="map">
+		<tr><td></td><td></td><td></td></tr>
+		<tr><td></td><td><span id="player">&nbsp;</span></td><td></td></tr>
+		<tr><td></td><td></td><td></td></tr>
+	</table>
+	<div class="description">
+		<p id="result">What happened!?</p>
+		<p id="flavour">What would you like to do?</p>
+		<b>What would you like to do?</b><br />
+		<div id="options">
+			<p><span>Option0</span><button type="button" onclick="javascript:choose(0);">Go!</button></p>
+			<p><span>Option1</span><button type="button" onclick="javascript:choose(1);">Go!</button></p>
+			<p><span>Option2</span><button type="button" onclick="javascript:choose(2);">Go!</button></p>
+			<p><span>Option3</span><button type="button" onclick="javascript:choose(3);">Go!</button></p>
+		</div>
+	</div>
+	</div>
+</body>
+</html>

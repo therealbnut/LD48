@@ -1,0 +1,55 @@
+#map
+{
+	float: left;
+
+	margin:  32px;
+	padding: 0px;
+	border:  8px solid black;
+    border-collapse: collapse;
+}
+#map td
+{
+	width:  128px;
+	height: 128px;
+	
+	margin:  0px;
+	padding: 0px;
+	border:  8px solid black;
+}
+#player
+{
+	display: block;	
+
+	width:  64px;
+	height: 64px;
+
+	margin:  0px auto;
+	padding: 0px;
+}
+.container
+{
+	position:absolute;
+	top:0; bottom:0; left:0; right:0;
+	
+	overflow: visible;
+	width:  928px;
+	height: 480px;
+	
+	margin: auto;
+	
+	display: block;
+	border:  8px solid black;
+}
+.description
+{
+	overflow-y: scroll;
+	
+	float: right;
+	
+	width:  336px;
+	height: 336px;
+	
+	padding: 32px;
+	margin: 32px 32px 32px 0px;
+	border:  8px solid black;
+}

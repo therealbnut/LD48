@@ -1,0 +1,50 @@
+.farmer   {background-size: 64px 64px; background-image: url('./images/Farmer@2x.png');}
+.rogue    {background-size: 64px 64px; background-image: url('./images/Rogue@2x.png');}
+.warrior  {background-size: 64px 64px; background-image: url('./images/Warrior@2x.png');}
+.wizard   {background-size: 64px 64px; background-image: url('./images/Wizard.png');}
+
+.farm     {background-size: 128px 128px; background-image: url('./images/Farm@2x.jpg');}
+.market   {background-size: 128px 128px; background-image: url('./images/Market@2x.jpg');}
+
+.desert01 {background-size: 128px 128px; background-image: url('./images/Desert01@2x.jpg');}
+.desert02 {background-size: 128px 128px; background-image: url('./images/Desert02@2x.jpg');}
+.desert03 {background-size: 128px 128px; background-image: url('./images/Desert03@2x.jpg');}
+.desert04 {background-size: 128px 128px; background-image: url('./images/Desert04@2x.jpg');}
+.forest01 {background-size: 128px 128px; background-image: url('./images/Forest01@2x.jpg');}
+.forest02 {background-size: 128px 128px; background-image: url('./images/Forest02@2x.jpg');}
+.forest03 {background-size: 128px 128px; background-image: url('./images/Forest03@2x.jpg');}
+.forest04 {background-size: 128px 128px; background-image: url('./images/Forest04@2x.jpg');}
+.plains01 {background-size: 128px 128px; background-image: url('./images/Plains01@2x.jpg');}
+.plains02 {background-size: 128px 128px; background-image: url('./images/Plains02@2x.jpg');}
+.plains03 {background-size: 128px 128px; background-image: url('./images/Plains03@2x.jpg');}
+.plains04 {background-size: 128px 128px; background-image: url('./images/Plains04@2x.jpg');}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx)
+{
+	.farmer   {background-image: url('./images/Farmer@2x.png');}
+	.rogue    {background-image: url('./images/Rogue@2x.png');}
+	.warrior  {background-image: url('./images/Warrior@2x.png');}
+	.wizard   {background-image: url('./images/Wizard@2x.png');}
+
+	.farm     {background-image: url('./images/Farm@2x.jpg');}
+	.market   {background-image: url('./images/Market@2x.jpg');}
+
+	.desert01 {background-image: url('./images/Desert01@2x.jpg');}
+	.desert02 {background-image: url('./images/Desert02@2x.jpg');}
+	.desert03 {background-image: url('./images/Desert03@2x.jpg');}
+	.desert04 {background-image: url('./images/Desert04@2x.jpg');}
+	.forest01 {background-image: url('./images/Forest01@2x.jpg');}
+	.forest02 {background-image: url('./images/Forest02@2x.jpg');}
+	.forest03 {background-image: url('./images/Forest03@2x.jpg');}
+	.forest04 {background-image: url('./images/Forest04@2x.jpg');}
+	.plains01 {background-image: url('./images/Plains01@2x.jpg');}
+	.plains02 {background-image: url('./images/Plains02@2x.jpg');}
+	.plains03 {background-image: url('./images/Plains03@2x.jpg');}
+	.plains04 {background-image: url('./images/Plains04@2x.jpg');}
+}
