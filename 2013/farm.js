@@ -4,7 +4,7 @@ function farm_update(farm)
 	{
 		farm.chickens -= 1;
 	}
-	console.log('chickens: ' + farm.chickens);
+	// console.log('chickens: ' + farm.chickens);
 }
 
 var state_farm_enter =
@@ -41,7 +41,7 @@ var state_farm_enter =
 			choose_flavour([
 				"You're at your farm, there are chickens in the yard. Bok, bok!",
 				"You are at your farm, the chickens seem well fed. Yum!",
-				"You stand at the entrance to your farm and breath in the fresh country air, then you curse the chickens."
+				"You stand at the entrance to your farm and breath in the fresh country air."
 			]);
 			set_options([
 				"Go on an adventure!",

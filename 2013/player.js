@@ -59,7 +59,7 @@ function player_move(player, choice)
 		case 2: player.y -= 1; break;
 		case 3: player.x -= 1; break;
 	}
-	console.log('move to: ' + player.x + ', ' + player.y);
+	// console.log('move to: ' + player.x + ', ' + player.y);
 }
 
 function player_redraw(player, element)
