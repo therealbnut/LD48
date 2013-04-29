@@ -47,6 +47,25 @@ var monster_fight =
 						choose_result([
 							"You kill the " + monster.name + " and loot it, you find a " + item_name + " and " + gold + " gold piece(s).",
 						]);
+
+						if (item_gettype(item_name) == 'headgear' && 
+							item_getarmour(item_name) > item_getarmour(player.headgear))
+						{
+							player_additem(player, player.headgear);
+							player.headgear = item_name;
+						}
+						if (item_gettype(item_name) == 'armour' && 
+							item_getarmour(item_name) > item_getarmour(player.armour))
+						{
+							player_additem(player, player.armour);
+							player.armour = item_name;
+						}
+						if (item_gettype(item_name) == 'footwear' && 
+							item_getarmour(item_name) > item_getarmour(player.footwear))
+						{
+							player_additem(player, player.footwear);
+							player.footwear = item_name;
+						}
 						if (item_gettype(item_name) == 'weapon' && 
 							item_getdamage(item_name) > item_getdamage(player.weapon))
 						{

@@ -119,7 +119,10 @@ function item_getdamage(item_name)
 	var item = item_get(item_name);
 	return Math.floor(item.damage[0] + (1+item.damage[1]-item.damage[0]) * Math.random());
 }
-
+function item_getarmour(item_name)
+{
+	return item_get(item_name).armour;
+}
 function item_getcost(item_name)
 {
 	return item_get(item_name).cost;
