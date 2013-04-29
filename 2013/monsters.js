@@ -39,6 +39,7 @@ var monster_fight =
 				{
 					var item_name = item_generate(monster.level);
 					var gold      = monster.level - item_getcost(item_name);
+					if (gold < 0) gold = 1.0; // lucky!
 					player_additem(player, 'gold', gold);
 					if (item_name != null)
 					{
@@ -46,7 +47,17 @@ var monster_fight =
 						choose_result([
 							"You kill the " + monster.name + " and loot it, you find a " + item_name + " and " + gold + " gold piece(s).",
 						]);
-						player_additem(player, item_name);
+						if (item_gettype(item_name) == 'weapon' && 
+							item_getdamage(item_name) > item_getdamage(player.weapon))
+						{
+							player_additem(player, player.weapon);
+							player.style  = item_getstyle(item_name);
+							player.weapon = item_name;
+						}
+						else
+						{
+							player_additem(player, item_name);
+						}
 					}
 					else
 					{
