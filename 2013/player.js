@@ -5,12 +5,12 @@ function player_create()
 		style: 'farmer',
 
 		weapon:   'pitchfork',
-		headgear: 'straw_hat',
-		armour:   'cloth',
-		footwear: 'bear_feet',
+		headgear: 'straw hat',
+		armour:   'cloth vest',
+		footwear: 'bear feet',
 
 		inventory: {
-			chicken_food: 2,
+			'chicken food': 2,
 			gold: 2
 		}
 	};

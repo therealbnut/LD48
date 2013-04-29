@@ -65,8 +65,8 @@ var state_desert_enter =
 				{
 					choose_result([
 						"You fight the " + monster.name,
-						"You run away screaming.",
-						"Good idea."
+						"You run screaming at the " + monster.name + ".",
+						"You never liked " + monster.name + " anyway."
 					]);
 					state_set(monster_fight);
 				}

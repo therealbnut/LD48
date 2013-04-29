@@ -45,7 +45,10 @@ var state_forest_enter =
 					choose_result([
 						"You quietly slip behind a tree, the " + monster.name + " is amazed as you vanish.",
 						"You pretend to be a tree, thankfully " + monster.name + " are not known for their intellect.",
-						"Mistaking a tree for the " + monster.name + " you charge, and get away cleanly."
+						"Mistaking a tree for the " + monster.name + " you charge, and get away cleanly.",
+						"You run from the " + monster.name + ".",
+						"You roll to escape, only joking, this game can't do that.",
+						"If this could roll to escape you'd get a " + Math.floor(1+10*Math.random()) + ", but that doesn't matter anyway."
 					]);
 				}
 				else
@@ -65,10 +68,10 @@ var state_forest_enter =
 				if (monster != null)
 				{
 					choose_result([
-						"You fight the " + monster.name,
-						"You run from the " + monster.name + ".",
-						"You roll to escape, only joking, this game can't do that.",
-						"If this could roll to escape you'd get a " + Math.floor(1+10*Math.random()) + ", but that doesn't matter anyway."
+						"You fight the " + monster.name + "!",
+						"You decide to fight!",
+						"You've been waiting for a good fight.",
+						"Oh well, this should be funny at least."
 					]);
 					state_set(monster_fight);
 				}

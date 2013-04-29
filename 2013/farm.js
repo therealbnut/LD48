@@ -76,7 +76,7 @@ var state_farm_enter =
 				state_set(state_move);
 				break;
 			case 1:
-				if (!player_removeitem(player, 'chicken_food'))
+				if (!player_removeitem(player, 'chicken food'))
 				{
 					choose_result([
 						"You would feed the chickens, if you had some food...",

@@ -32,11 +32,11 @@ var state_market_enter =
 				state_set(state_move);
 				break;
 			case 1:
-				if (!player_removeitem(player, 'gold', item_getcost('chicken_food')))
+				if (!player_removeitem(player, 'gold', item_getcost('chicken food')))
 				{
 					choose_result([
 						"You don't have enough money to buy chicken food.",
-						"You need "+item_getcost('chicken_food')+
+						"You need "+item_getcost('chicken food')+
 							" gold pieces for chicken food, you have " + player_getquantity(player,'gold'),
 						"No chicken food here, try the market.",
 						"The market might have some chicken food, you do not."
@@ -44,12 +44,12 @@ var state_market_enter =
 				}
 				else
 				{
-					player_additem(player, 'chicken_food');
+					player_additem(player, 'chicken food');
 					choose_result([
-						"After hours of haggling, you buy some chicken food for " + item_getcost('chicken_food') +
+						"After hours of haggling, you buy some chicken food for " + item_getcost('chicken food') +
 							" gold pieces.",
-						"You but some chicken food for " + item_getcost('chicken_food') + " gold pieces.",
-						"After searching the whole market you eventually find some chicken food for " + item_getcost('chicken_food') +
+						"You but some chicken food for " + item_getcost('chicken food') + " gold pieces.",
+						"After searching the whole market you eventually find some chicken food for " + item_getcost('chicken food') +
 							" gold pieces.",
 						"You buy some chicken food and try some, delicious!",
 						"You buy some chicken food, it's half sawdust, but that's why it was so cheap!"

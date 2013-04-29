@@ -25,7 +25,7 @@ function set_result(txt)
 }
 function choose_result(items)
 {
-	set_result(items[Math.floor(Math.random()*items.length)]);
+	set_result(items[Math.floor(Math.random()*(items.length))]);
 }
 function set_flavour(txt)
 {
@@ -33,7 +33,7 @@ function set_flavour(txt)
 }
 function choose_flavour(items)
 {
-	set_flavour(items[Math.floor(Math.random()*items.length)]);
+	set_flavour(items[Math.floor(Math.random()*(items.length))]);
 }
 function set_options(options)
 {
@@ -78,6 +78,15 @@ function state_set_from_tile(tile)
 function chance(val)
 {
 	return (Math.random() < val);
+}
+function clone(obj)
+{
+	var out = {};
+	for(var key in obj)
+	{
+		out[key] = (typeof(obj[key])=="object") ? clone(obj[key]) : obj[key];
+	}
+	return out;
 }
 
 function begin()
